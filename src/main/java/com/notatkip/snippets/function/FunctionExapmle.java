@@ -9,9 +9,9 @@ public class FunctionExapmle {
     public static void main(String[] args) {
 
         Map<String, Command> commands = new HashMap<String, Command>();
-        commands.put("A", () -> System.out.println("COMMAND A"));
-        commands.put("B", () -> System.out.println("COMMAND B"));
-        commands.put("C", () -> System.out.println("COMMAND C"));
+        commands.put("A", () -> System.out.println("A"));
+        commands.put("B", () -> System.out.println("B"));
+        commands.put("C", () -> System.out.println("C"));
         commands.get("A").exec();
 
         Map<String, Consumer<String>> commandsWithParameter = new HashMap<String, Consumer<String>>();

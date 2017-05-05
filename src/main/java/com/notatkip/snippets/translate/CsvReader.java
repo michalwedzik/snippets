@@ -25,7 +25,7 @@ public class CsvReader {
     }
 
 
-    public List<Card> obtainCard() throws IOException {
+    public List<Card> obtainCards() throws IOException {
         List<String> lines = readFile();
         return lines.stream().map(l -> lineToObject(l)).filter(f -> f.isPresent()).map(m -> m.get()).collect(Collectors.toList());
     }

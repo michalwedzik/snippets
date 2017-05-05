@@ -7,7 +7,7 @@ public class TranslateMe {
     public static void main(String... args) throws Exception {
 
         CsvReader cr = new CsvReader();
-        List<Card> cards = cr.obtainCard();
+        List<Card> cards = cr.obtainCards();
 
         cards.get(0).translateToPolish();
         cards.get(1).translateToPolish();

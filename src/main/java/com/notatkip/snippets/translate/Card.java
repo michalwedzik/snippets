@@ -14,6 +14,8 @@ public class Card {
 
     private Map<Locale, String> reversedMeaning;
 
+    public static final Locale POLISH = new Locale("pl", "pl");
+
 
     public int getIndex() {
         return index;
@@ -62,8 +64,8 @@ public class Card {
     public void translateToPolish() throws Exception {
         Translator translator = new Translator();
 
-        getUprightMeaning().put(new Locale("pl", "pl"), translator.translate(getUprightMeaning().get(Locale.ENGLISH)));
-        getReversedMeaning().put(new Locale("pl", "pl"), translator.translate(getReversedMeaning().get(Locale.ENGLISH)));
+        getUprightMeaning().put(Card.POLISH, translator.translate(getUprightMeaning().get(Locale.ENGLISH)));
+        getReversedMeaning().put(Card.POLISH, translator.translate(getReversedMeaning().get(Locale.ENGLISH)));
     }
 
 
@@ -88,7 +90,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card [index=" + index + ", name=" + name + ", uprightMeaning=" + uprightMeaning + ", reversedMeaning=" + reversedMeaning + "]";
+        return name + "; " + uprightMeaning.get(Card.POLISH) + ";" + uprightMeaning.get(Locale.ENGLISH) + "; " + reversedMeaning.get(Card.POLISH) + ";" + reversedMeaning.get(Locale.ENGLISH);
     }
 
 }

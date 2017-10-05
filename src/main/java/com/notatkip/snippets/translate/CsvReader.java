@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class CsvReader {
 
-    private static final String CSV_FILE_PATH = "/home/user/Pulpit/karty/all - meanings.csv";
+    private static final String CSV_FILE_PATH = "/home/michalwedzik/Pulpit/karty/all - meanings.csv";
 
 
     private Optional<Card> lineToObject(String line) {

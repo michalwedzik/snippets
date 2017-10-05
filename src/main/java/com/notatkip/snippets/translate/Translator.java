@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 
 public class Translator {
 
-    private static final String API_KEY = "YOUR_API_KEY";
+    private static final String API_KEY = "trnsl.1.1.20170501T125742Z.2d79460e253e0b07.e7c69c1834645efe6c7d440cd181a9af6fb87062";
 
     private static final String API_URL = "https://translate.yandex.net/api/v1.5/tr.json/translate";
 
